@@ -1,14 +1,14 @@
 services:
-- hash: none
+- hash: 4f8f6784e84317f26b323a9efe8b2136dedfca68
   hash_length: 7
   name: fabric8-analytics-release-monitor
   environments:
   - name: production
     parameters:
-      ENABLE_SCHEDULING: 0
+      ENABLE_SCHEDULING: 1
       DOCKER_REGISTRY: quay.io
       DOCKER_IMAGE: openshiftio/rhel-fabric8-analytics-release-monitor
-      REPLICAS: 0
+      REPLICAS: 1
       NPM_URL: https://registry.npmjs.org/
       PYPI_URL: https://pypi.org/
       SLEEP_INTERVAL: 30
